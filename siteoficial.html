@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Romeu Júnior - Escritor, palestrante e consultor. Explore literatura, desenvolvimento pessoal e serviços digitais.">
+    <title>Romeu Júnior</title>
+    <link rel="shortcut icon" href="imagens/rjunior ícone.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px;
+        }
+        header {
+            background-color: #7b1fa2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background-color: #6a1b9a;
+            padding: 10px 0;
+            margin: 0;
+            list-style: none;
+            
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        nav :hover {
+            color: #fdd835;
+            object-position: 10px;
+        }
+        .section {
+            display: none; /* Todas as seções escondidas por padrão */
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section.active {
+            display: block; /* Mostra apenas a seção ativa */
+        }
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align:center;
+            background-color: none;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            font-family: Cambria;
+        }
+        p{
+            font-size: medium;
+            text-align: justify;
+        }
+        h2{
+            text-align: left;
+            text-decoration: solid;
+        }
+        ul{
+            list-style: none;
+            text-align: left;
+            background-size:contain;
+        }
+        button{
+            background-color: #6a1b9a;
+            border-radius: 15px;
+            color: #ffffff;
+            width: 350px;
+            height: 60px;
+            font-style: italic;
+        }
+        button:hover{
+            background-color: #ffffff;
+            color: #fdd835;
+        }
+
+        /* Esconde o menu padrão em telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Botão de menu hamburguer */
+    .menu-toggle {
+        display: block;
+        background-color: #6a1b9a;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Mostra o menu quando o botão é clicado */
+    nav.active ul {
+        display: flex;
+    }
+}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Romeu Júnior</h1>
+    <p1>Transformando sonhos em realidade!</p1>
+</header>
+<nav>
+    <ul>
+        <li><a onclick="showSection('home')">Página Inicial</a></li>
+        <li><a onclick="showSection('about')">Sobre</a></li>
+        <li><a onclick="showSection('services')">Produtos/Serviços</a></li>
+        <li><a onclick="showSection('contacts')">Contatos</a></li>
+    </ul>
+</nav>
+<div class="section active" id="home">
+    <h1>Página Inicial</h1>
+    <p>Bem-vindo ao site oficial de Romeu Júnior! Aqui você encontrará inspiração, 
+    conhecimentos e serviços para ajudá-lo a alcançar seus objetivos.</p>
+    <div class="image-gallery">
+        <img src="imagens/fotos da home/foto de fato.jpeg" alt="foto de fato">
+    </div>
+    <h2> Um pouco sobre mim</h2>
+    <ul>
+        <em>
+            <li><strong>NOME:</strong> PAULO MANUEL ROMEU</li>
+            <li><strong>PSEUDÓNIMO:</strong> JÚNIOR</li>
+            <li><strong>NACIONALIDADE:</strong> ANGOLA</li>
+            <li><strong>DATA DE NASCIMENTO:</strong> 19/AGOSTO/2003 </li>
+        </em>
+    </ul>
+    <h4>PRIMEIRO CONTACTO COM A LITERATURA</h4>
+    <p> Teve seu primeiro contacto com a literatura após perceber que “conhecimento é poder” e que a melhor fonte de conhecimento são os livros.
+
+ Escritor nato escrevia pequenos textos, histórias, e inclusive cartas ao seu pai, aonde exprimia muito do que sentia por viver longe dele
+ e sem a sua companhia, quando ainda frequentava o ensino de base, cartas estas que nunca chegavam a ser enviadas ao pai. 
+
+ Aos 15 anos, foi-lhe ofertado um livro daquele que é considerado por ele e por muitos como um dos gurus da literatura angolana, Ondjaki, 
+ intitulado “Ynari: A menina das cinco tranças”. 
+ Livro que lhe serviu de chamariz para um novo mundo, cuja entrada repentina daria lugar à
+  uma ida sem volta ao mundo da Literatura. 
+  <br>
+ Mergulhado na arte literária e já escrevendo seus textos cada vez mais longos e constituídos, desde poemas, fábulas, contos e outros gêneros, 
+ apaixonou-se pela cultura Hip-Hop, onde teve a oportunidade de gravar seus lirismos em formato de músicas. Pertenceu ao grupo The Gringos. 
+  Em 2021 foi surpreendido pelo chamado de tornar-se um escritor, levando a carreira com maior responsabilidade. 
+  <br>
+  Foi então, que escreveu sua primeira obra literária intitulada “Geração Mutante: Novos mundos, novos desafios” onde afirma categoricamente e
+   vem provando que “o seu sonho não pode depender da tua situação actual”. Actualmente é palestrante, fundador da corrente “NATIVIDADE AFRICANA”. 
+ <br>
+   Tem como seu maior desejo ver ressurgir o amor entre às pessoas, o renascer do espírito africano-Bantu, e enraizá-los aos mais novos a fim de assegurarem 
+ o legado e perpetuarem-no. O autor tenta fazê-lo por meio da sua literatura e das suas acções em prol de uma sociedade com mais conhecimento.
+    </p>
+    
+</div>
+<div class="section" id="about">
+    <h2>Sobre</h2>
+    <div class="image-gallery">
+        <img src="imagens/FOTOS NA RÁDIO/entrevista.jpeg" alt="Entrevista na rádio">
+        <img src="imagens/FOTOS NA RÁDIO/h10.jpeg" alt="Rádio">
+        <img src="imagens/FOTOS NA RÁDIO/radio viana.jpg" alt="Rádio Viana">
+    </div>
+    <p>Paulo Manuel Romeu, conhecido como Romeu Júnior, é um jovem angolano...</p>
+    <p>ROMEU JÚNIOR é escritor, palestrante e
+        locutor de Rádio. Trata-se ainda de um
+        estudioso de Filosofia e entusiasta de
+        Neurociência e psicologia. Compartilha seus
+        conhecimentos em palestras, workshops e
+        publicações, com o objetivo de disseminar
+        informações sobre desenvolvimento pessoal e
+        cognitivo e promover a saúde mental na
+        comunidade. Seu compromisso é ajudar os
+        outros a alcançar uma vida equilibrada e
+        significativa.
+        Tem como desejo ver ressurgir o amor entre
+        as pessoas e a qualidade das relações
+        interpessoais. Como africano, busca ao
+        máximo ver o renascer do espírito Bantu sob a
+        ideologia de “Só somos quando os outros são”.
+        Actualmente residente no Brasil, constitui-se
+        um eterno estudioso da mente humana.</p>
+</div>
+<div class="section" id="services">
+    <h2>Produtos/Serviços</h2>
+    <nav>
+        <ul>
+            <li><a onclick="showSection('Consultoria')"> | Consultoria em Análise de Dados</li>
+    
+            <li><a onclick="showSection('Criação')"> | Criação de Sites e Aplicativos</li>
+            
+            <li><a onclick="showSection('Mentoria')">|Mentoria para Desenvolvimento Pessoal & Palestras</li>
+        </ul>
+        <div>
+            <img src="imagens/serviços/consultoria analise de dados.jpg" alt="fff">
+            <img src="imagens/mentttt.jpg" alt="hhh">
+            <img src="imagens/mentoria de dep.jpeg" alt="ffffffff">
+        </div>
+        
+        <div>
+            <img src="imagens/mentoria de dep.jpeg" alt="hhh">
+            <img src="imagens/serviços/consultoria analise de dados.jpg" alt="fff">
+            <img src="imagens/mentttt.jpg" alt="ffffffff">
+        </div>
+    </nav>
+   
+    
+</div>
+<div class="section" id="Consultoria">
+<h2>CONSULTORIA EM ANÁLISES DE DADOS E CIBERSEGURANÇA</h2>
+    <p>
+        Transforme seus dados em poder estratégico e proteja seu negócio contra ameaças digitais!
+        
+        No mundo atual, a informação é um dos ativos mais valiosos para qualquer empresa. Mas você está realmente aproveitando seus dados para tomar decisões assertivas? E mais importante: sua empresa está segura contra ataques cibernéticos?
+        
+        Com a minha consultoria em Análise de Dados e Cibersegurança, você terá acesso a soluções personalizadas para otimizar a gestão da informação e garantir a proteção digital do seu negócio.
+        
+        O que eu posso fazer por você?
+        
+        
+        <h4>✅ Análise de Dados Inteligente</h4>
+        
+        <ul>
+            <li>✔ Coleta, organização e interpretação de dados para insights estratégicos</li>
+            <li>✔ Modelagem e visualização para facilitar a tomada de decisão</li>
+            <li>✔ Automação de relatórios e dashboards interativos</li>
+        </ul>
+        
+        
+        <h4>✅ Cibersegurança para Empresas e Profissionais</h4>
+        
+        <ul>
+            <li>✔ Diagnóstico de vulnerabilidades e proteção contra ataques</li>
+            <li>✔ Implementação de políticas de segurança digital</li>
+            <li>✔ Treinamento para conscientização em segurança da informação</li>
+        </ul>
+        
+        
+        Por que investir em análise de dados e cibersegurança?
+        
+        <em>
+            <p>✔ Redução de riscos e fraudes</p>
+            <p>✔ Melhoria na performance e eficiência da empresa</p>
+            <p>✔ Decisões mais inteligentes e baseadas em dados concretos</p>
+            <p>✔ Proteção contra vazamento de informações e ataques hackers</p>
+        </em>
+        
+        <p>Quer elevar seu negócio para o próximo nível com segurança e inteligência? Entre em contato e agende uma consultoria:</p>
+        <a href="https://wa.me/554991641349" text="Olá, seja Bem-vindo. Gostaria de marcar sua consultaria? Deixe sua mensagem" target="_blank"><button><strong>AGENDE JÁ A SUA CONSULTORIA</strong></button></a>
+    </p>
+
+</div>
+<div class="section" id="Criação">
+    <h2>Criação de Sites e Aplicativos Sob Medida para o Seu Negócio</h2>
+
+    <p>
+        Destaque-se no digital com um site ou aplicativo profissional e funcional!
+        
+        No mundo conectado de hoje, ter uma presença online forte não é mais uma opção – é uma necessidade. Seja para vender, divulgar sua marca ou oferecer serviços, um site bem estruturado ou um aplicativo intuitivo pode ser a chave para o sucesso do seu negócio.
+        
+        Com a minha expertise em criação de sites e aplicativos, desenvolvo soluções personalizadas que combinam tecnologia, design e usabilidade para proporcionar a melhor experiência para seus clientes.
+    </p>  
+    <p>O que eu posso criar para você?</p>
+    
+    <h4>✅ Sites Profissionais e Institucionais</h4>
+    
+    <ul>
+        <li>✔ Sites responsivos e otimizados para Google (SEO)</li>
+        
+        <li>✔ Layout moderno e personalizado</li>
+        
+       <li>✔ Integração com redes sociais e formulários de contato</li>
+    </ul>
+    
+    
+    <h4>✅ Lojas Virtuais (E-commerce)</h4>
+    
+    <ul>
+        <li>✔ Plataformas seguras para vender online</li>
+        
+        <li>✔ Métodos de pagamento integrados</li>
+        
+        <li>✔ Gestão de estoque e pedidos automatizada</li>
+    </ul>
+    
+    
+    <h4>✅ Aplicativos para Android e iOS</h4>
+    
+    <ul>
+        <li>✔ Desenvolvimento de apps intuitivos e ágeis</li>
+        
+        <li>✔ Aplicações personalizadas para seu negócio</li>
+        
+        <li>✔ Segurança e alta performance</li>
+    </ul>
+    
+    
+    <p>Por que investir em um site ou app?</p>
+    
+     <UL>
+        <em>
+            <li>✔ Aumento da visibilidade e credibilidade da sua marca</li>
+            <li>✔ Maior alcance e facilidade para atrair clientes</li>
+            <li>✔ Experiência digital otimizada para seus usuários</li>
+            <li>✔ Monetização e escalabilidade para seu negócio</li>
+        </em>
+    </UL>
+
+    
+    <p>Pronto para transformar sua ideia em realidade? Entre em contato e vamos criar juntos!</p>
+   
+    <a href="https://wa.me/554991641349" text="Olá, seja Bem-vindo. Gostaria de marcar sua consultaria? Deixe sua mensagem" target="_blank"><button><strong>ENVIE O SEU PROJETO</strong></button></a>
+a
+</div>
+<div class="section" id="Mentoria">
+    <h2>Mentoria para Desenvolvimento Pessoal e Palestras Inspiradoras</h2>
+
+    Liberte seu potencial e alcance seus objetivos com direcionamento e estratégias eficazes!
+    
+    <p>
+        O sucesso não acontece por acaso – ele é resultado de autoconhecimento, disciplina e boas decisões. Se você quer crescer profissionalmente, melhorar sua produtividade ou transformar sua mentalidade, minha mentoria para desenvolvimento pessoal pode te ajudar a dar o próximo passo.
+        
+        Além disso, minhas palestras motivacionais e educativas são ideais para empresas, instituições e grupos que desejam inspirar e capacitar pessoas para novos desafios.
+    </p>
+    <em>
+        <p>Como posso te ajudar?</p>
+    </em>
+    
+    <h4>✅Mentoria Individual e em Grupo</h4>
+    
+    <ul>
+        <li>✔ Planejamento estratégico para seus objetivos pessoais e profissionais</li>
+        <li>✔ Desenvolvimento de inteligência emocional e autoconfiança</li>
+        <li>✔ Técnicas para melhorar produtividade e foco</li>
+    </ul>
+    
+    <h4>✅ Palestras Inspiradoras</h4>
+        Temas sobre crescimento pessoal, tecnologia e inovação. Reflexões sobre carreira, propósito e mindset de sucesso
+        Interação e dinâmicas para engajamento do público
+    <p>Por que investir em desenvolvimento pessoal?</p>
+    <ul>
+        <li>✔ Melhoria no desempenho e tomada de decisões</li>
+        <li>✔ Mais clareza e controle sobre sua vida e carreira</li>
+        <li>✔ Motivação e inspiração para alcançar novas conquistas</li>
+    </ul>
+    
+    <p>Quer dar um salto no seu crescimento? Agende sua mentoria ou leve uma palestra transformadora para seu time!</p>
+    
+    <a href="https://wa.me/554991641349" text="Olá, seja Bem-vindo. Gostaria de marcar sua consultaria? Deixe sua mensagem" target="_blank"><button><strong>MARQUE JÁ A SUA PALESTRA</strong></button></a>
+</div>
+
+<div class="section" id="contacts">
+    <h2>Contatos</h2>
+   <ul>
+    <li><a href="https://www.facebook.com/gelson.pitxoquinho/" target="_blank">Facebook</a></li>
+    <li><a href="https://www.linkedin.com/in/paulo-manuel-romeu-690691237/" target="_blank">linkedin</a></li>
+    <li> <a href="mailto:promeu299@gmail.com">Email</a></li>
+   </ul>
+
+</div>
+<footer>
+    <p>© 2025 Romeu Júnior. Todos os direitos reservados.</p>
+</footer>
+<script>
+    // Função para exibir a seção correspondente ao clique
+    function showSection(sectionId) {
+        // Ocultar todas as seções
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => section.classList.remove('active'));
+        
+        // Mostrar a seção correspondente
+        const activeSection = document.getElementById(sectionId);
+        if (activeSection) {
+            activeSection.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>
